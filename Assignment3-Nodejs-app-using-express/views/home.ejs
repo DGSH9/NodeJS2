@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+
+    <h2>A basic HTML table</h2>
+
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Profession</th>
+        </tr>
+        <% userArray.forEach((i)=>{%>
+            <tr>
+                <td>
+                    <%= i.name %>
+                </td>
+                <td>
+                    <%= i.email %>
+                </td>
+                <td>
+                    <%= i.age %>
+                </td>
+                <td>
+                    <%= i.city %>
+                </td>
+                <td>
+                    <%= i.profession %>
+                </td>
+            </tr>
+            <%})%>
+    </table>
+
+    <div>
+        <button>
+            <a href="/form"> Add user</a>
+        </button>
+
+    </div>
+
+
+</body>
+
+</html>
